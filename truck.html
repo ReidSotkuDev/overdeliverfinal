@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Hero Image with Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    .hero {
+      height: 100vh;
+      background-image: url('path-to-your-hero-image.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: relative;
+      text-align: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+    .services {
+      padding: 50px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    .service-item {
+      margin-bottom: 30px;
+    }
+    .service-item h3 {
+      margin-bottom: 15px;
+    }
+    .service-item p {
+      margin-bottom: 15px;
+    }
+    .call-to-action {
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+    .call-to-action:hover {
+      background-color: #0056b3;
+    }
+    .service-card:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+    /* CSS Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.wow {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Trigger the animation when the user scrolls to the element */
+/* This requires JavaScript to add 'animated' class when in viewport */
+.animated {
+  visibility: visible;
+}
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="overdeliverlogo.png" width="110"  alt="OverDeliver Logo" class="d-inline-block align-top">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Request a Quote</a>
+              </li>
+    
+            </ul>
+        </div>
+    </nav>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Our Company</h1>
+    <p>Innovative Solutions for Modern Problems</p>
+  </div>
+</div>
+
+<section class="about-section">
+    <!-- About Start -->
+  <div class="container-fluid py-5 my-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5 col-md-6 col-sm-12 wow animated" data-wow-delay=".3s">
+                <div class="h-100 position-relative">
+                    <div class="cr-absolute w-100" style="top: 25%; left: 25%; ">
+                        <img src="crane2.png" class="img-fluid w-30 rounded" style="margin-bottom: 3%;"  alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                <h1 class="mb-4 aboutush1">About Us</h1>
+                <p>In the bustling world of the service-based freight shipping industry, it's easy to feel like just another number. At OverDeliver, we understand that the true mark of distinction isn't just in competitive pricing but in the unparalleled customer service we offer.</p>
+                <p class="mb-4">Our clients often tell us how we've transformed their shipping operations, streamlining processes, and making the complex seem simple. While we value their privacy and won't share exact testimonials, their satisfaction is a testament to our commitment. If you're curious about their experiences, we've subtly incorporated hints of these stories into our website's design. Each narrative tells a tale of dedication, expertise, and our relentless pursuit of excellence.</p>
+                <a href="about.html" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- About End -->
+  
+  </section>
+  
+  
+  
+  
+   
+  <section class="section-services">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title">What We Offer</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service service-card"id ="service1">
+            <div class="part-1">
+              <i class="fab fa-500px"></i>
+              <h3 class="title">Truckload Services</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Local, long haul, expedited, and cross-border shipping solutions.
+  
+                Full truckload services utilize our expansive 42,000+ carrier network for cost-effective, efficient shipments.</p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Start Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service service-card"id ="service2">
+            <div class="part-1">
+              <i class="fab fa-angellist"></i>
+              <h3 class="title">Dedicated Transportation</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Tailored shipping services based on client needs like local shuttles, on-site equipment, and dedicated linehaul drivers. Also available is personalized fleet management for diverse requirements.</p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Start Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service service-card"id ="service3">
+            <div class="part-1">
+              <i class="fas fa-award"></i>
+              <h3 class="title">Less Than Truckload</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Efficient less-than-truckload (LTL) services for partial load shipping. LTL is an efficient way to ship smaller loads. We identify the fastest and most cost-effective LTL options for our clients' smaller shipments.</p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Start Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service service-card"id ="service4">
+            <div class="part-1">
+              <i class="fab fa-asymmetrik"></i>
+              <h3 class="title">Warehousing</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Warehousing solutions for inventory storage, supply chain management, and order fulfillment as businesses expand.</p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+        <!-- Start Single Service -->
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service service-card"id ="service5" >
+            <div class="part-1">
+              <i class="fas fa-broadcast-tower"></i>
+              <h3 class="title">Truck to Rail Services</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">We have strong ties with Class I railroads and top drayage companies, allowing flexible services to transfer goods from trucks to trains for long-distance shipping. This intermodal service can be more cost-effective for longer hauls.</p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- / End Single Service -->
+      
+      </div>
+    </div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    new WOW().init();
+
+  AOS.init(); // Initialize the AOS animation library
+</script>
+
+</body>
+</html>

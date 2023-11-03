@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>/* Reset some basic elements */
+ 
+
+  
+  
+  
+
+ .hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.background-video {
+  width: 100%;
+  height: auto; /* Adjust as necessary to cover the desired area */
+  position: relative;
+  z-index: -1; /* Ensures the video stays in the background */
+}
+.video-overlay h1{font-size: 120px;}
+.video-overlay p{font-size: 15px;}
+.video-overlay {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the precise center */
+  color: #FFFFFF; /* Text color, change as needed */
+  text-align: center; /* Centers text within the container */
+  z-index: 2; /* Ensures the text appears above the video */
+
+}
+
+/* Ensure responsive video sizing */
+@media (max-width: 768px) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+  
+
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .services-overview {
+      flex-direction: column;
+    }
+  }
+  .background-video {
+margin-bottom: 10px;  
+width: 92%;  
+border-bottom-left-radius: 20px; /* adjust the radius as needed */
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.hero {
+  position: relative;
+  z-index: 1;
+  /* Your other styles */
+}
+.banner {
+  font-size: 1vw; /* This will set the font size to 2% of the viewport width */
+}
+
+/* For small screens where the font size might get too small, you can set a minimum font size */
+@media (max-width: 700px) {
+  .video-overlay h1{font-size: 60px;}
+.video-overlay p{font-size: 20px;}
+
+}
+@media (max-width: 400px) {
+  .video-overlay h1{font-size: 45px;}
+.video-overlay p{font-size: 10px;}
+}
+.row{margin-top: -70px;}
+
+
+/* For large screens where the font size might get too big, you can set a maximum font size */
+
+
+  </style>
+<body>
+  
+<header>
+    
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="index.html">
+        <img src="overdeliverlogo.png" width="110"  alt="OverDeliver Logo" class="d-inline-block align-top">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Request a Quote</a>
+          </li>
+
+        </ul>
+    </div>
+</nav>
+
+</header>
+
+<section class="hero">
+  <video autoplay loop muted class="background-video">
+    <source src="cartimelapse.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay">
+    <h1>Our Services</h1>
+    <p>Delivering excellence in everything we do.</p>
+  </div>
+</section>
+
+
+<section class="section-services">
+  <div class="container">
+    
+    <div class="row">
+      <!-- Start Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service service-card"id ="service1">
+          <div class="part-1">
+            <i class="fab fa-500px"></i>
+            <h3 class="title">Truckload Services</h3>
+          </div>
+          <div class="part-2">
+            <p class="description">Local, long haul, expedited, and cross-border shipping solutions.
+
+              Full truckload services utilize our expansive 42,000+ carrier network for cost-effective, efficient shipments.</p>
+          </div>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Start Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service service-card"id ="service2">
+          <div class="part-1">
+            <i class="fab fa-angellist"></i>
+            <h3 class="title">Dedicated Transportation</h3>
+          </div>
+          <div class="part-2">
+            <p class="description">Tailored shipping services based on client needs like local shuttles, on-site equipment, and dedicated linehaul drivers. Also available is personalized fleet management for diverse requirements.</p>
+          </div>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Start Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service service-card"id ="service3">
+          <div class="part-1">
+            <i class="fas fa-award"></i>
+            <h3 class="title">Less Than Truckload</h3>
+          </div>
+          <div class="part-2">
+            <p class="description">Efficient less-than-truckload (LTL) services for partial load shipping. LTL is an efficient way to ship smaller loads. We identify the fastest and most cost-effective LTL options for our clients' smaller shipments.</p>
+          </div>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Start Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service service-card"id ="service4">
+          <div class="part-1">
+            <i class="fab fa-asymmetrik"></i>
+            <h3 class="title">Warehousing</h3>
+          </div>
+          <div class="part-2">
+            <p class="description">Warehousing solutions for inventory storage, supply chain management, and order fulfillment as businesses expand.</p>
+          </div>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Start Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service service-card"id ="service5" >
+          <div class="part-1">
+            <i class="fas fa-broadcast-tower"></i>
+            <h3 class="title">Truck to Rail Services</h3>
+          </div>
+          <div class="part-2">
+            <p class="description">We have strong ties with Class I railroads and top drayage companies, allowing flexible services to transfer goods from trucks to trains for long-distance shipping. This intermodal service can be more cost-effective for longer hauls.</p>
+          </div>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+    
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+ 
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="contact.html">Request a Quote</a></li>
+
+  </ul>
+  <p>&copy;2023 OverDeliver INC. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // JavaScript for Read More functionality
+  document.querySelectorAll('.read-more').forEach(button => {
+    button.onclick = function() {
+      this.nextElementSibling.style.display = 'block';
+      this.style.display = 'none';
+    };
+  });
+  </script>
+</body>
+</html>

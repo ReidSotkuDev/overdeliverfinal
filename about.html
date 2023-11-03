@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>/* Reset some basic elements */
+ 
+
+  
+  
+  
+
+ .hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.background-video {
+  width: 100%;
+  height: auto; /* Adjust as necessary to cover the desired area */
+  position: relative;
+  z-index: -1; /* Ensures the video stays in the background */
+}
+.video-overlay h1{font-size: 120px;}
+.video-overlay p{font-size: 15px;}
+.video-overlay {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the precise center */
+  color: #FFFFFF; /* Text color, change as needed */
+  text-align: center; /* Centers text within the container */
+  z-index: 2; /* Ensures the text appears above the video */
+
+}
+
+/* Ensure responsive video sizing */
+@media (max-width: 768px) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+  
+
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .services-overview {
+      flex-direction: column;
+    }
+  }
+  .background-video {
+margin-bottom: 10px;  
+width: 92%;  
+border-bottom-left-radius: 20px; /* adjust the radius as needed */
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.hero {
+  position: relative;
+  z-index: 1;
+  /* Your other styles */
+}
+.banner {
+  font-size: 1vw; /* This will set the font size to 2% of the viewport width */
+}
+
+/* For small screens where the font size might get too small, you can set a minimum font size */
+@media (max-width: 700px) {
+  .video-overlay h1{font-size: 60px;}
+.video-overlay p{font-size: 20px;}
+
+}
+@media (max-width: 400px) {
+  .video-overlay h1{font-size: 45px;}
+.video-overlay p{font-size: 10px;}
+
+}
+.row{margin-top: -70px;}
+
+
+
+/* For large screens where the font size might get too big, you can set a maximum font size */
+
+.client-testimonials {
+    margin-top:6%;
+    margin-bottom: 10%;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem 1rem;
+  color: #333; /* Dark text color for contrast */
+  font-size: 1.2rem; /* Responsive font size */
+  line-height: 1.9; /* Good line height for readability */
+}
+
+@media (max-width: 768px) {
+  .client-testimonials {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .client-testimonials {
+    font-size: 0.8rem; /* Even smaller font for very small screens */
+  }
+}
+
+  </style>
+<body>
+  
+<header>
+    
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="index.html">
+        <img src="overdeliverlogo.png" width="110"  alt="OverDeliver Logo" class="d-inline-block align-top">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Request a Quote</a>
+          </li>
+
+        </ul>
+    </div>
+</nav>
+
+</header>
+<div class = "color">
+<section class="hero">
+  <video autoplay loop muted class="background-video">
+    <source src="cartimelapse.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay">
+    <h1>About Us</h1>
+  </div>
+</section>
+<section class="client-testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>In the bustling world of the service-based freight shipping industry, it's easy to feel like just another number. At OverDeliver, we understand that the true mark of distinction isn't just in competitive pricing but in the unparalleled customer service we offer.</p>
+          <p>Our clients often tell us how we've transformed their shipping operations, streamlining processes, and making the complex seem simple. While we value their privacy and won't share exact testimonials, their satisfaction is a testament to our commitment. If you're curious about their experiences, we've subtly incorporated hints of these stories into our website's design. Each narrative tells a tale of dedication, expertise, and our relentless pursuit of excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+ 
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="contact.html">Request a Quote</a></li>
+
+  </ul>
+  <p>&copy;2023 OverDeliver INC. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

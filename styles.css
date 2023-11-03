@@ -1,0 +1,603 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.about-section, .services-section, .footer {
+    background-color: white;
+}
+
+
+
+  
+
+.hidden {
+    display: none !important;
+}
+
+
+.aboutush1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 58px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-section{margin-top: -140px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image-container {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    border-radius: 20%;
+    
+}
+
+.about-image {
+    margin-top: 10px;
+    max-width: 100%;
+    min-width: 80%;
+    
+}
+
+.about-text {
+    flex: 2;
+    margin-left: 40px;
+    max-width: 50%;
+}
+.about-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.6; /* For better readability */
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Add some spacing before the button */
+}
+.about-text button {
+    font-size: 16px;
+    padding: 15px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    border: 1px black solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adds a hover effect */
+
+    /* On hover, change the background color */
+   
+}
+.about-text button:hover {
+    transition: background-color 0.3s ease; /* Adds a hover effect */
+
+    font-size: 17px;
+
+    /* On hover, change the background color */
+   
+}
+
+
+@media (max-width: 768px) {
+
+
+    .about-image {
+        margin-top: 10px;
+        
+        max-width: 70%;
+        min-width: 70%;
+        
+    }
+    .about-content {
+        flex-direction: column; 
+    }
+
+    .about-image-container, .about-text {
+        width: 100%;
+    }
+
+    .about-image-container {
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+
+    .about-text {
+        max-width: 84%;
+        text-align: left; /* Center the text */
+        padding: 0 10px; /* Padding to keep text from touching the edges */
+        font-size: 18px;
+    }
+}
+/* ... (existing CSS) ... */
+
+
+
+.video-section {
+    position: relative; /* Changed from fixed */
+    width: 100%;
+    height: 100vh; /* Set this to whatever you want, but vh makes it responsive to the screen size */
+    overflow: hidden;
+}
+
+.video-section video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.text-large {
+    font-size: 2.5em;
+    margin: 0.2em 0;
+}
+
+.text-small {
+    font-size: 1.5em;
+    margin: 0.2em 0;
+}
+
+.quote-button {
+    padding: 0.8em 1.5em;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: -10em;
+}
+
+.quote-button:hover {
+    background-color: darkred;
+}
+
+.cloud {
+    width: 100vw; /* Full viewport width */
+    display: block;
+    z-index: 2; /* Higher z-index to ensure it covers the video when scrolled over */
+}
+
+
+/* Screen size: Small devices (phones) */
+
+.cloud-booking-section {
+    position: relative;
+    z-index: 3; /* This ensures the booking section appears above the video and cloud */
+}
+
+
+/* ... (rest of the CSS) ... */
+
+
+.overlay-text {
+
+    
+}
+.text-small,
+.text-large {
+    margin: -20px; /* Remove default margins */
+}
+.text-small {
+
+    font-size: 25px;
+}
+.text-large {
+    font-size: 140px;
+}
+
+.quote-button {
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* for a hover effect */
+
+    
+}
+@media (max-width: 768px) {
+    .text-small {
+        font-size: 20px;
+    }
+
+    .text-large {
+        font-size: 100px;
+    }
+
+    .quote-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-small {
+        font-size: 18px;
+    }
+
+    .text-large {
+        font-size: 80px;
+    }
+
+    .quote-button {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+.section-services {
+	padding-top: 110px;
+	padding-bottom: 120px;
+	font-family: "Poppins", sans-serif;
+	background-color: white; /* Change background to white */
+	color: #333; /* Change font color to dark gray for contrast */
+}
+
+
+
+
+
+
+.section-services .single-service {
+	background-color: #f5f5f5; /* Lighter gray background for individual services */
+}
+
+.section-services .single-service .part-1 i {
+	color: #f70037;
+}
+
+.section-services .single-service .part-1 .title {
+	color: #333; /* Change title color to dark gray */
+}
+
+.section-services .single-service .part-2 .description {
+	color: #6f6f71;
+}
+
+.section-services .single-service .part-2 a {
+	color: #333; /* Change link color to dark gray */
+}
+
+.section-services .single-service .part-2 a i {
+	color: #f70037;
+}
+
+
+
+
+
+
+
+
+
+
+.section-services {
+	padding-top: 110px;
+	padding-bottom: 120px;
+	font-family: "Poppins", sans-serif;
+	background-color: #0171BC;
+	color: #fff;
+}
+
+.section-services .header-section {
+	margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 140px;
+	height: 1px;
+	background-color: white;
+}
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 45px;
+	height: 3px;
+	background-color: white;
+}
+
+
+
+.section-services .header-section .description {
+	color: white;
+}
+
+.section-services .single-service {
+	margin-top: 40px;
+	background-color: white;
+	box-shadow: 5px 0 25px 5px rgba(0,0,0,.1);
+}
+
+.section-services .single-service .part-1 {
+	padding: 40px 40px 25px;
+	border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+	margin-bottom: 25px;
+	font-size: 50px;
+	color:#0171BC;
+}
+
+.section-services .single-service .part-1 .title {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+	padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+	margin-bottom: 22px;
+	color: #6f6f71;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+	color: #0171BC;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.section-services .single-service .part-2 a i {
+	margin-right: 10px;
+	color: #0171BC;
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+
+.cloud-booking-section {
+    position: relative;
+margin-top: -450px;    z-index: 20;
+}
+/* Your existing styles */
+
+/* ... */
+
+/* Adjust video height and aspect ratio on mobile */
+@media (max-width: 980px) { 
+.text-large{ 
+    font-size: 108px;
+}
+.text-small{font-size: 20px;}
+}
+@media (max-width:381){
+    .menu{margin-right: 0%;}
+
+}
+@media (max-width: 780px) { 
+    .spacer{width: 200px;
+    height: 40px;
+    background-color: white;
+    }
+.about-section{margin-top: -100px;}
+.cloud{margin-top: 208px;}
+    .text-large{ 
+        font-size: 80px;
+        
+    }
+    .video-section{position: relative;}
+    .about-section{z-index: 1;}
+    .overlay-text{
+        margin-top: -70px;
+    }
+    .text-small{font-size: 10px;}
+
+    }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Video overlay and button will remain fixed */
+.overlay-text,
+.quote-button {
+    position: fixed;
+    z-index: 10;
+}
+
+.cloud-booking-section {
+    position: relative;
+    z-index: 20;
+}
+.navbar-custom {
+    background-image: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.15);
+
+
+}
+.video-section{width: 100%;}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+    font-weight: thin;
+   
+        font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #333333;
+}
+/* Add this CSS code to style the fixed button */
+
+#fixedbutton:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .footer{margin-right: 200px;}
+  .menu{margin-right: 40px;}
+  .social-icon{margin-right: 40px;}
+  }
